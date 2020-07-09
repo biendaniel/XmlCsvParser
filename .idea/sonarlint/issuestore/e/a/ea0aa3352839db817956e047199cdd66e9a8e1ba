@@ -1,0 +1,11 @@
+
+S	java:S1065"9Replace this use of System.out or System.err by a logger.(½ü½áøÿÿÿÿ
+P
+java:S1141("5Extract this nested try block into a separate method.(¡»¢üùÿÿÿÿ
+V	java:S125"<This block of commented-out lines of code should be removed.(®¦˜Ãýÿÿÿÿ
+M
+java:S11355"2Complete the task associated to this TODO comment.(½ü½áøÿÿÿÿ
+>
+java:S1148"#Use a logger to log this exception.(Ö·÷þÿÿÿÿ
+>
+java:S1148"#Use a logger to log this exception.(€ÉÔ…ýÿÿÿÿ

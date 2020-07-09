@@ -1,0 +1,21 @@
+
+N	java:S106"9Replace this use of System.out or System.err by a logger.(«Ö¥¢
+?
+java:S1128	")Remove this unused import 'java.io.File'.(†Ğ¥Å
+„
+java:S1130""iRemove the declaration of thrown exception 'java.lang.NullPointerException' which is a runtime exception.(³Ñáşÿÿÿÿ
+U
+java:S1128":Remove this unused import 'java.io.FileNotFoundException'.(·î™ùÿÿÿÿ
+T
+java:S4719"9Replace charset name argument with StandardCharsets.UTF_8(æ“¶Ûøÿÿÿÿ
+o	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(«°­½
+A
+java:S1481"&Remove this unused "i" local variable.(É™üªÿÿÿÿÿ
+H
+java:S1135;"2Complete the task associated to this TODO comment.(Õ©Èç
+M
+java:S1135'"2Complete the task associated to this TODO comment.(–É™úÿÿÿÿ
+N	java:S106;"9Replace this use of System.out or System.err by a logger.(Õ©Èç
+I
+java:S16128",Replace this lambda with a method reference.(½€‡Ÿ8§¨«ÿ².
+U	java:S1069"9Replace this use of System.out or System.err by a logger.(ê¾ú®8§¨«ÿ².
