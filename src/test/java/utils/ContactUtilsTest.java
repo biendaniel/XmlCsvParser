@@ -6,38 +6,75 @@ import static org.junit.jupiter.api.Assertions.*;
 
 class ContactUtilsTest {
 
+    long customerId = 1L;
+
     @Test
     void shouldAssignContactTypePhone() {
-        assertEquals(ContactType.PHONE, ContactUtils.createContact("654765765", 1L).getType());
+        //given
+        String contactValue = "654765765";
+        //when
+        ContactType contactType = ContactUtils.createContact(contactValue, customerId).getType();
+        //then
+        assertEquals(ContactType.PHONE, contactType);
     }
 
     @Test
     void shouldAssignContactTypePhone_WithSpace() {
-        assertEquals(ContactType.PHONE, ContactUtils.createContact("654 765 765", 1L).getType());
+        //given
+        String contactValue = "654 765 765";
+        //when
+        ContactType contactType = ContactUtils.createContact(contactValue, customerId).getType();
+        //then
+        assertEquals(ContactType.PHONE, contactType);
     }
 
     @Test
     void shouldAssignContactTypePhone_WithDash() {
-        assertEquals(ContactType.PHONE, ContactUtils.createContact("654-765-765", 1L).getType());
+        //given
+        String contactValue = "654-765-765";
+        //when
+        ContactType contactType = ContactUtils.createContact(contactValue, customerId).getType();
+        //then
+        assertEquals(ContactType.PHONE, contactType);
     }
 
     @Test
     void shouldAssignContactTypePhone_WithPrefix() {
-        assertEquals(ContactType.PHONE, ContactUtils.createContact("+48654-765-765", 1L).getType());
+        //given
+        String contactValue = "+48654-765-765";
+        //when
+        ContactType contactType = ContactUtils.createContact(contactValue, customerId).getType();
+        //then
+        assertEquals(ContactType.PHONE, contactType);
     }
 
     @Test
     void shouldAssignContactTypeEmail() {
-        assertEquals(ContactType.EMAIL, ContactUtils.createContact("kowalski@gmail.com", 1L).getType());
+        //given
+        String contactValue = "kowalski@gmail.com";
+        //when
+        ContactType contactType = ContactUtils.createContact(contactValue, customerId).getType();
+        //then
+        assertEquals(ContactType.EMAIL, contactType);
     }
 
     @Test
     void shouldAssignContactTypeJabber() {
-        assertEquals(ContactType.JABBER, ContactUtils.createContact("jbr", 1L).getType());
+        //given
+        String contactValue = "jbr";
+        //when
+        ContactType contactType = ContactUtils.createContact(contactValue, customerId).getType();
+        //then
+        assertEquals(ContactType.JABBER, contactType);
     }
 
     @Test
     void shouldAssignContactTypeUnknown() {
-        assertEquals(ContactType.UNKNOWN, ContactUtils.createContact("1211212121", 1L).getType());
+        //given
+        String contactValue = "1211212121";
+        //when
+        ContactType contactType = ContactUtils.createContact(contactValue, customerId).getType();
+        //then
+        assertEquals(ContactType.UNKNOWN, contactType);
     }
 }

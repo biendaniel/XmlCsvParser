@@ -18,18 +18,30 @@ class FileUtilsTest {
 
     @Test
     void shouldReturnCsvReader_txtExtension() throws NotSupportedFileExtension {
-        FileReader fileReader = FileUtils.checkFileType("test.txt");
+        //given
+        String fileName = "test.txt";
+        //when
+        FileReader fileReader = FileUtils.checkFileType(fileName);
+        //then
         assertTrue(fileReader instanceof CsvReader);
     }
 
     @Test
     void shouldThrowException() {
-        assertThrows(NotSupportedFileExtension.class, () -> FileUtils.checkFileType("test.csvv"));
+        //given
+        String fileName = "test.csvv";
+        //when
+        //then
+        assertThrows(NotSupportedFileExtension.class, () -> FileUtils.checkFileType(fileName));
     }
 
     @Test
     void shouldReturnXmlReader() throws NotSupportedFileExtension {
-        FileReader fileReader = FileUtils.checkFileType("test.xml");
+        //given
+        String fileName = "test.xml";
+        //when
+        FileReader fileReader = FileUtils.checkFileType(fileName);
+        //then
         assertTrue(fileReader instanceof XmlReader);
     }
 }
